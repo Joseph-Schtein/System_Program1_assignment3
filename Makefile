@@ -9,7 +9,7 @@ all: main
 main: txtfindmain isortmain
 
 txtfindmain: $(OBJECT_TXT_FIND) txtfind
-	     $(CC) $(FLAGS) -o txtfind<input.txt $(OBJECT_TXT_FIND) libtxtfind.a 
+	     $(CC) $(FLAGS) -o txtfind $(OBJECT_TXT_FIND) libtxtfind.a 
 
 isortmain: $(OBJECT_INSERTION_SORT) isort
 	     $(CC) $(FLAGS) -o isort $(OBJECT_INSERTION_SORT) libisort.a 
